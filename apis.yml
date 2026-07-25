@@ -1,8 +1,32 @@
 aid: crownbio
 name: crownbio
-description: crownbio is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Crown Bioscience (CrownBio) is a global contract research organization (CRO)
+  specializing in translational oncology and immuno-oncology drug discovery. It
+  provides preclinical and translational services to biotech and pharmaceutical
+  companies, including in vitro drug screening (cell lines, organoids, panels),
+  in vivo studies (PDX, CDX, syngeneic and humanized models), DMPK/toxicology,
+  preclinical imaging, and biomarker analysis spanning genomics (NGS, single-cell
+  sequencing), proteomics, spatial biology, and flow cytometry. CrownBio also
+  operates public web-browsable cancer-model databases — a PDX Model Database
+  (2,500+ models), an Organoid Models Database (600+ models), an IO Murine Models
+  Database, and a Cell Line / CDX Database — searchable through a Multi-Model
+  Search interface. There is no public developer API or programmatic data access;
+  the databases are web interfaces. This profile was surfaced as a portfolio
+  company of Qiming Venture Partners and enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/crownbio/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.crownbio.com/hubfs/Logos/crown-logo-symbol-1-400x551.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Contract Research Organization
+- Oncology
+- Drug Discovery
+- Preclinical
+- Biotechnology
+- Life Sciences
+- Cancer Models
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/crownbio-domain-security.yml
+- type: WellKnown
+  url: well-known/crownbio-well-known.yml
 - type: Website
-  url: https://crownbio.com
+  url: https://www.crownbio.com
+- type: Blog
+  url: https://blog.crownbio.com
+- type: Support
+  url: https://www.crownbio.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.crownbio.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.crownbio.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

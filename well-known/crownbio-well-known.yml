@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of https://www.crownbio.com/.well-known/*
+host: https://www.crownbio.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Crown Bioscience publishes no /.well-known/ discovery documents. The apex
+  crownbio.com host 301-redirects to www.crownbio.com, which returns 404 for all
+  probed well-known paths. No security.txt, OIDC/OAuth discovery, API catalog, or
+  AI plugin manifest is present.
